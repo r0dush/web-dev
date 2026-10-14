@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
             Душенков Роман Дмитриевич
         </title>
@@ -13,21 +15,25 @@
                 <a href="#main-text">Обо мне</a>
                 <a href="#progress-info">Прогрессия обучения</a>
             </nav>
-
+            <div class="hero">
+                <h1>
+                    Душенков Роман Дмитриевич
+                </h1>
+                <img src="images/photo_2026-01-26_23-23-10.jpg" alt="Фотография Романа">
+            </div>
         </header>
-            <h1>
-               Душенков Роман Дмитриевич
-            </h1>
-        <img src="images/photo_2026-01-26_23-23-10.jpg" alt="Фотография Романа" width="200" height="200">
+            
         <main id="main-text">
-            <p>Я Душенков Роман Дмитриевич, студент 2 курса БГУ по направлению Математическое обеспечение и администрирование информационных систем</p>
-            <p>Живу в городе Улан-удэ, моя цель научиться программировать и в идеале как можно быстрее научиться хотя бы web-dev</p>
-            <p>Больше даже не знаю что о себе написать, думаю что 3 абзаца достаточно пока что, позже мб буду пополнять сайт</p>
+            <div class="about-cards">
+                <div class="card"><p>Я Душенков Роман Дмитриевич, студент 2 курса БГУ по направлению Математическое обеспечение и администрирование информационных систем</p></div>
+                <div class="card"><p>Живу в городе Улан-удэ, моя цель научиться программировать и в идеале как можно быстрее научиться хотя бы web-dev</p></div>
+                <div class="card"><p>Больше даже не знаю что о себе написать, думаю что 3 абзаца достаточно пока что, позже мб буду пополнять сайт</p></div>
+            </div>
         </main>
         <section id="progress-info">
-        <p>
-            ------------------ 1: образовние ------------------
-        </p>
+        <h2>
+             1: образовние 
+        </h2>
         <ol>
             <li>
                 Школа №32
@@ -41,9 +47,9 @@
                 Пока нет данных
             </li>
         </ol>
-        <p>
-           ------------------ Пункт 2: знания языков ------------------
-        </p>
+        <h2>
+           Пункт 2: знания языков
+        </h2>
         <table>
             <caption>Прогресс развития</caption>
             <thead>
@@ -72,11 +78,12 @@
         <section id="contacts">
             <h2>Связаться со мной</h2>
             <form action="#" method="post">
-                <label for="name">Имя</label>
-                <input type="text" id="name" name="name" placeholder="Имя" required>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="example@ex.ru" required>
-
+                <div class="form-row">
+                    <div class="form-group"> <label for="name">Имя</label>
+                    <input type="text" id="name" name="name" placeholder="Имя" required></div>
+                    <div class="form-group"> <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="example@ex.ru" required></div>
+                </div>
                 <label for="topic">Тема</label>
                 <select name="topic" id="topic">
                     <option value="">Выберите</option>
@@ -89,7 +96,7 @@
                 <label for="message">Сообщение</label>
                 <textarea name="message" id="message" rows="5" placeholder="Введите ваше сообщение" required></textarea>
 
-                <label>
+                <label class="checkbox-label">
                     <input type="checkbox" name="agree" required>
                     Согласен на обработку данных
                 </label>
