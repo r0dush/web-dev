@@ -13,23 +13,41 @@
         <header>
             <nav>
                 <a href="#main-text">Обо мне</a>
+                <a href="#projects">Проекты</a>
                 <a href="#progress-info">Прогрессия обучения</a>
             </nav>
+           
+        </header>
+            
+        <main id="main-text"> 
             <div class="hero">
                 <h1>
                     Душенков Роман Дмитриевич
                 </h1>
                 <img src="images/photo_2026-01-26_23-23-10.jpg" alt="Фотография Романа">
             </div>
-        </header>
-            
-        <main id="main-text">
             <div class="about-cards">
                 <div class="card"><p>Я Душенков Роман Дмитриевич, студент 2 курса БГУ по направлению Математическое обеспечение и администрирование информационных систем</p></div>
                 <div class="card"><p>Живу в городе Улан-удэ, моя цель научиться программировать и в идеале как можно быстрее научиться хотя бы web-dev</p></div>
                 <div class="card"><p>Больше даже не знаю что о себе написать, думаю что 3 абзаца достаточно пока что, позже мб буду пополнять сайт</p></div>
             </div>
         </main>
+        <section id="projects">
+            <h2>Мои проекты</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Проект 1</h3>
+                    <p>Пока что нет проектов, но скоро будут</p>
+                </div>
+                <div class="project-card">
+                    <h3>Проект 2</h3>
+                    <p>Пока что нет проектов, но скоро будут</p>
+                </div>
+                <div class="project-card">
+                    <h3>Проект 3</h3>
+                    <p>Пока что нет проектов, но скоро будут</p>
+                </div>
+        </section>
         <section id="progress-info">
         <h2>
              1: образовние 
@@ -81,8 +99,13 @@
                 <div class="form-row">
                     <div class="form-group"> <label for="name">Имя</label>
                     <input type="text" id="name" name="name" placeholder="Имя" required></div>
-                    <div class="form-group"> <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="example@ex.ru" required></div>
+                    <div class="form-group"> 
+                        <label for="email">Email</label>
+                        <div class="input-with-icon">
+                            <input type="email" id="email" name="email" placeholder="example@ex.ru" required>
+                            <span class="input-icon">📧</span>
+                        </div>
+                    </div>
                 </div>
                 <label for="topic">Тема</label>
                 <select name="topic" id="topic">
